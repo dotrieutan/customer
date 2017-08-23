@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tsb.vn.customer.mapper.CustomerMapper">
+    <resultMap id="customerMap" type="CustomerDataItem">
+        <id column="id" property="id" />
+        <result column="first_name" property="firstName" />
+        <result column="last_name" property="lastName" />
+        <result column="created_date" property="createdDate" />
+        <result column="last_modified_date" property="lastModifiedDate" />
+    </resultMap>
+
+    <select id="findByEmail" resultMap="customerMap">
+        SELECT id, email, first_name, last_name, created_date, last_modified_date
+        FROM customer
+        WHERE email = #{customer.email}
+    </select>
+
+    <update id="updateCustomer">
+        UPDATE customer
+        SET first_name = #{customer.firstName}
+        WHERE id = #{customer.id}
+    </update>
+</mapper>

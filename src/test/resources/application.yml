@@ -1,0 +1,26 @@
+info:
+  app:
+    name: service-customer
+    description: Customer Service
+
+server:
+  context-path: /${CONTEXT_PATH:customer}
+  port: 8090
+
+spring:
+  application:
+    name: service-customer
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/arval?currentSchema=service_customer
+    username: arval
+    password: arval
+
+logging:
+  level:
+    root: INFO
+
+mybatis:
+  type-aliases-package: com.tsb.vn.customer.dto
+  mapper-locations: /mapper/*.xml
+  type-handlers-package: com.tsb.vn.customer.typehandler
