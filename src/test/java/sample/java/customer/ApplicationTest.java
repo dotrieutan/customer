@@ -1,4 +1,4 @@
-package com.tsb.vn.customer;
+package sample.java.customer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

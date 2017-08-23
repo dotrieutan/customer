@@ -1,8 +1,8 @@
-package com.tsb.vn.customer.service;
+package sample.java.customer.service;
 
-import com.tsb.vn.customer.dto.dataitem.CustomerDataItem;
-import com.tsb.vn.customer.dto.param.CustomerParam;
-import com.tsb.vn.customer.mapper.CustomerMapper;
+import sample.java.customer.dto.dataitem.CustomerDataItem;
+import sample.java.customer.dto.param.CustomerParam;
+import sample.java.customer.mapper.CustomerMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

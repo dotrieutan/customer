@@ -1,6 +1,6 @@
-package com.tsb.vn.customer.dto.param;
+package sample.java.customer.dto.dataitem;
 
-public class CustomerParam extends Param {
+public class CustomerDataItem extends DataItem {
     private String email;
     private String firstName;
     private String lastName;

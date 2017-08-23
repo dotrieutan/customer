@@ -1,7 +1,7 @@
-package com.tsb.vn.customer.dto.dataitem;
+package sample.java.customer.dto.dataitem;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.tsb.vn.customer.utils.Constants;
+import sample.java.customer.utils.Constants;
 
 import java.time.LocalDateTime;
 
