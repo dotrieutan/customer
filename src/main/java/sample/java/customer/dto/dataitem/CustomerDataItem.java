@@ -1,4 +1,4 @@
-package com.tsb.vn.customer.dto.dataitem;
+package sample.java.customer.dto.dataitem;
 
 public class CustomerDataItem extends DataItem {
     private String email;

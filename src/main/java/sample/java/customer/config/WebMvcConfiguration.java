@@ -1,4 +1,4 @@
-package com.tsb.vn.customer.config;
+package sample.java.customer.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;

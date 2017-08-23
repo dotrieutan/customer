@@ -1,7 +1,7 @@
-package com.tsb.vn.customer.mapper;
+package sample.java.customer.mapper;
 
-import com.tsb.vn.customer.dto.dataitem.CustomerDataItem;
-import com.tsb.vn.customer.dto.param.CustomerParam;
+import sample.java.customer.dto.dataitem.CustomerDataItem;
+import sample.java.customer.dto.param.CustomerParam;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

@@ -1,8 +1,8 @@
-package com.tsb.vn.customer.controller;
+package sample.java.customer.controller;
 
-import com.tsb.vn.customer.dto.dataitem.CustomerDataItem;
-import com.tsb.vn.customer.dto.param.CustomerParam;
-import com.tsb.vn.customer.service.TestService;
+import sample.java.customer.dto.dataitem.CustomerDataItem;
+import sample.java.customer.dto.param.CustomerParam;
+import sample.java.customer.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

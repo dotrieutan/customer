@@ -1,4 +1,4 @@
-package com.tsb.vn.customer.typehandler;
+package sample.java.customer.typehandler;
 
 import org.apache.ibatis.type.MappedTypes;
 

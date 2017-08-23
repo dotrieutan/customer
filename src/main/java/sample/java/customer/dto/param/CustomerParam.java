@@ -1,4 +1,4 @@
-package com.tsb.vn.customer.dto.param;
+package sample.java.customer.dto.param;
 
 public class CustomerParam extends Param {
     private String email;

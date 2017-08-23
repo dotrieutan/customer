@@ -1,4 +1,4 @@
-package com.tsb.vn.customer.utils;
+package sample.java.customer.utils;
 
 public final class Constants {
 
