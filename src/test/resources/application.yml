@@ -1,6 +1,6 @@
 info:
   app:
-    name: service-customer
+    name: sample-customer
     description: Customer Service
 
 server:
@@ -9,7 +9,7 @@ server:
 
 spring:
   application:
-    name: service-customer
+    name: sample-customer
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/arval?currentSchema=service_customer
@@ -21,6 +21,6 @@ logging:
     root: INFO
 
 mybatis:
-  type-aliases-package: com.tsb.vn.customer.dto
+  type-aliases-package: sample.java.customer.dto
   mapper-locations: /mapper/*.xml
-  type-handlers-package: com.tsb.vn.customer.typehandler
+  type-handlers-package: sample.java.customer.typehandler
