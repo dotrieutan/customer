@@ -21,6 +21,6 @@ logging:
     root: INFO
 
 mybatis:
-  type-aliases-package: com.tsb.vn.customer.dto
+  type-aliases-package: sample.java.customer.dto
   mapper-locations: /mapper/*.xml
-  type-handlers-package: com.tsb.vn.customer.typehandler
+  type-handlers-package: sample.java.customer.typehandler
