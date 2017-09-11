@@ -1,13 +1,17 @@
 package sample.java.customer.mapper;
 
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
+import org.mapstruct.Mapper;
+import org.mapstruct.MappingTarget;
+import org.mapstruct.ReportingPolicy;
+import sample.java.customer.domain.Customer;
 import sample.java.customer.dto.CustomerDto;
 
-@Mapper
+@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface CustomerMapper {
 
-    CustomerDto findByEmail(@Param("customer") CustomerDto customerDto);
+    Customer customerDtoToCustomer(CustomerDto customerDto);
 
-    void updateCustomer(@Param("customer") CustomerDto customerDto);
+    CustomerDto customerToCustomerDto(Customer customer);
+
+    void mapDtoToCustomer(@MappingTarget Customer customer, CustomerDto customerDto);
 }

@@ -11,16 +11,14 @@ spring:
   application:
     name: sample-customer
   datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/arval?currentSchema=service_customer
-    username: arval
-    password: arval
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/customer
+    username: admin
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: validate
 
 logging:
   level:
     root: INFO
-
-mybatis:
-  type-aliases-package: sample.java.customer.dto
-  mapper-locations: /mapper/*.xml
-  type-handlers-package: sample.java.customer.typehandler
