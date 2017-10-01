@@ -11,13 +11,11 @@ spring:
   application:
     name: sample-customer
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/customer
-    username: admin
-    password: admin
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:TEST;DB_CLOSE_ON_EXIT=FALSE;MODE=Oracle
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: create-drop
 
 logging:
   level:
