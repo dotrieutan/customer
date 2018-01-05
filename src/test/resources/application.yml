@@ -5,7 +5,7 @@ info:
 
 server:
   context-path: /${CONTEXT_PATH:customer}
-  port: 8090
+  port: 8080
 
 spring:
   application:
